@@ -1,4 +1,3 @@
-import Bell from "@assets/icons/bell.svg";
 import EyeHide from "@assets/icons/eye-hide.svg";
 import EyeShow from "@assets/icons/eye-show.svg";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
@@ -10,6 +9,7 @@ import { View, Pressable, StyleSheet } from "react-native";
 import CustomBottomTab from "@/components/navigation/CustomBottomTab";
 import { borderRadius, spacing } from "@/constants/DesignTokens";
 import { BLURHASH, HEADER_CONFIG } from "@/constants/configurations";
+import { useSession } from "@/context/auth";
 import { hideValuesAtom } from "@/lib/atoms";
 
 const customBottomTab = (props: BottomTabBarProps) => {
@@ -17,6 +17,7 @@ const customBottomTab = (props: BottomTabBarProps) => {
 };
 
 export default function TabLayout() {
+  const { userInfo } = useSession();
   const [isHidden, setIsHidden] = useAtom(hideValuesAtom);
 
   return (
@@ -24,18 +25,18 @@ export default function TabLayout() {
       tabBar={customBottomTab}
       screenOptions={{
         ...HEADER_CONFIG,
-        headerTitle: "Olá",
+        headerTitle: `Olá, ${userInfo?.name ?? userInfo?.email}`,
         headerStyle: {
           height: 100
         },
         headerLeft: () => (
           <Pressable
             style={styles.imageWrapper}
-            // onPress={() => router.push("/settings/")}
+            onPress={() => router.push("/settings/")}
           >
             <Image
               style={styles.image}
-              source={""}
+              source={userInfo?.avatar}
               placeholder={BLURHASH}
               contentFit="cover"
             />
@@ -45,10 +46,6 @@ export default function TabLayout() {
           <View style={styles.headerRight}>
             <Pressable onPress={() => setIsHidden(!isHidden)}>
               {isHidden ? <EyeShow /> : <EyeHide />}
-            </Pressable>
-
-            <Pressable onPress={() => setIsHidden(!isHidden)}>
-              <Bell />
             </Pressable>
           </View>
         )
