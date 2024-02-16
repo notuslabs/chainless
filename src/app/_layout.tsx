@@ -7,6 +7,7 @@ import * as SystemUI from "expo-system-ui";
 import { Platform } from "react-native";
 
 import { base, dark } from "@/constants/DesignTokens";
+import { SessionProvider } from "@/context/auth";
 
 SystemUI.setBackgroundColorAsync(dark.bg.canvas);
 SplashScreen.preventAutoHideAsync();
@@ -28,11 +29,13 @@ const theme = {
 export default function RootLayout() {
   return (
     <ThemeProvider value={theme}>
-      <BottomSheetModalProvider>
-        <Slot />
+      <SessionProvider>
+        <BottomSheetModalProvider>
+          <Slot />
 
-        <StatusBar style="dark" />
-      </BottomSheetModalProvider>
+          <StatusBar style="dark" />
+        </BottomSheetModalProvider>
+      </SessionProvider>
     </ThemeProvider>
   );
 }

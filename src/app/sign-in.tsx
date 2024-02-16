@@ -9,6 +9,7 @@ import TextField from "@/components/inputs/TextField";
 import Heading from "@/components/typography/Heading";
 import Paragraph from "@/components/typography/Paragraph";
 import { dark, spacing } from "@/constants/DesignTokens";
+import { useSession } from "@/context/auth";
 
 const EMAIL = "email";
 
@@ -19,6 +20,8 @@ const emailInputSchema = z.object({
 type EmailInputSchema = z.infer<typeof emailInputSchema>;
 
 export default function SignIn() {
+  const { signIn } = useSession();
+
   const {
     control,
     handleSubmit,
@@ -28,7 +31,7 @@ export default function SignIn() {
   });
 
   const onSubmit = (data: EmailInputSchema) => {
-    console.log(data[EMAIL]);
+    signIn(data[EMAIL]);
   };
 
   return (
@@ -99,10 +102,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: spacing[24],
     height: 270
-  },
-  socialButons: {
-    flexDirection: "row",
-    gap: spacing[16]
   },
   textContainer: {
     marginTop: "auto",
