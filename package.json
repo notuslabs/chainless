@@ -33,7 +33,6 @@
     "jotai": "^2.6.4",
     "moti": "^0.27.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
     "react-hook-form": "^7.50.1",
     "react-native": "0.72.10",
     "react-native-collapsible-tab-view": "^6.2.1",
@@ -45,7 +44,6 @@
     "react-native-screens": "~3.22.0",
     "react-native-svg": "13.9.0",
     "react-native-tab-view": "^3.5.2",
-    "react-native-web": "~0.19.6",
     "victory-native": "^36.9.1",
     "zod": "^3.22.4"
   },
