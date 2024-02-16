@@ -28,6 +28,8 @@ export default function AppLayout() {
       screenOptions={{
         headerShown: false
       }}
-    ></Stack>
+    >
+      <Stack.Screen name="(tabs)" />
+    </Stack>
   );
 }
