@@ -1,3 +1,4 @@
-import "expo-router/entry";
-import "react-native-reanimated";
 import "react-native-gesture-handler";
+import "react-native-reanimated";
+
+import "expo-router/entry";
