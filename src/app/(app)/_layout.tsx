@@ -1,7 +1,7 @@
 import {
   useFonts,
   PlusJakartaSans_400Regular,
-  PlusJakartaSans_700Bold,
+  PlusJakartaSans_700Bold
 } from "@expo-google-fonts/plus-jakarta-sans";
 import { Stack, SplashScreen } from "expo-router";
 import { useEffect } from "react";
@@ -9,7 +9,7 @@ import { useEffect } from "react";
 export default function AppLayout() {
   const [loaded, error] = useFonts({
     PlusJakartaSans_400Regular,
-    PlusJakartaSans_700Bold,
+    PlusJakartaSans_700Bold
   });
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function AppLayout() {
   return (
     <Stack
       screenOptions={{
-        headerShown: false,
+        headerShown: false
       }}
     ></Stack>
   );

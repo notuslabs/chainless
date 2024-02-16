@@ -1,3 +1,4 @@
+import { BottomSheetModalProvider } from "@gorhom/bottom-sheet";
 import { ThemeProvider, DefaultTheme } from "@react-navigation/native";
 import { SplashScreen, Slot } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -14,16 +15,18 @@ const theme = {
     ...DefaultTheme.colors,
     text: dark.fg["on-contrast"],
     background: base.brand[60],
-    card: base.brand[60],
-  },
+    card: base.brand[60]
+  }
 };
 
 export default function RootLayout() {
   return (
     <ThemeProvider value={theme}>
-      <Slot />
+      <BottomSheetModalProvider>
+        <Slot />
 
-      <StatusBar style="dark" />
+        <StatusBar style="dark" />
+      </BottomSheetModalProvider>
     </ThemeProvider>
   );
 }
