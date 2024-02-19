@@ -47,7 +47,7 @@ export default function SelectCurrency({
                 symbol: item.currency,
                 balance: item.balance,
                 balanceFiat: BigNumber(item.balance).multipliedBy(
-                  currentPrice?.[item.coingeckoId]?.brl ?? 1
+                  currentPrice?.[item.coingeckoId]?.usd ?? 1
                 ),
                 image: item.image
               })
@@ -57,7 +57,7 @@ export default function SelectCurrency({
               iconToken={item.image}
               tokenName={item.currency}
               value={Number(item.balance)}
-              price={currentPrice?.[item.coingeckoId]?.brl ?? 1}
+              price={currentPrice?.[item.coingeckoId]?.usd ?? 1}
             />
           </ListButton>
         );

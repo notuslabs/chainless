@@ -77,7 +77,7 @@ export default function AssetAccordion({ value }: AssetAccordionProps) {
             size="xs-bold"
           >
             {grossIncomeValue > 0 ? "+" : ""}
-            {grossIncomeValue.toLocaleString("pt-BR", CURRENCY_FORMAT)}
+            {grossIncomeValue.toLocaleString("en-US", CURRENCY_FORMAT)}
           </Label>
         </View> */}
       </Pressable>
@@ -93,7 +93,7 @@ export default function AssetAccordion({ value }: AssetAccordionProps) {
               </Label>
 
               <Label size="xs-bold">
-                {(4923).toLocaleString("pt-BR", CURRENCY_FORMAT)}
+                {(4923).toLocaleString("en-US", CURRENCY_FORMAT)}
               </Label>
             </View>
 
@@ -103,7 +103,7 @@ export default function AssetAccordion({ value }: AssetAccordionProps) {
               </Label>
 
               <Label size="xs-bold">
-                {(4700).toLocaleString("pt-BR", CURRENCY_FORMAT)}
+                {(4700).toLocaleString("en-US", CURRENCY_FORMAT)}
               </Label>
             </View>
 
@@ -119,7 +119,7 @@ export default function AssetAccordion({ value }: AssetAccordionProps) {
                 }}
               >
                 {yeild > 0 ? "+" : ""}
-                {yeild.toLocaleString("pt-BR", CURRENCY_FORMAT)}
+                {yeild.toLocaleString("en-US", CURRENCY_FORMAT)}
               </Label>
             </View>
 
@@ -135,7 +135,7 @@ export default function AssetAccordion({ value }: AssetAccordionProps) {
                 }}
               >
                 {taxa > 0 ? "+" : ""}
-                {taxa.toLocaleString("pt-BR", CURRENCY_FORMAT)}
+                {taxa.toLocaleString("en-US", CURRENCY_FORMAT)}
               </Label>
             </View>
           </View>

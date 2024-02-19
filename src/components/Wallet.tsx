@@ -82,7 +82,7 @@ export default function Wallet() {
                 currency={item.currency}
                 image={item.image}
                 amount={item.balance}
-                price={currentPrice?.[item.coingeckoId]?.brl ?? 1}
+                price={1}
               />
             )}
           </Skeleton>

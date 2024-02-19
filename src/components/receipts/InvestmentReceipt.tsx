@@ -32,7 +32,7 @@ export default function InvestmentReceipt({
     >
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          {currentDate.toLocaleString("pt-BR", {
+          {currentDate.toLocaleString("en-US", {
             year: "numeric",
             month: "short",
             day: "numeric",
@@ -74,11 +74,11 @@ export default function InvestmentReceipt({
         </Label>
 
         <Label style={styles.value}>
-          {amount.toLocaleString("pt-BR", SIMPLE_CURRENCY_FORMAT)} {symbol}
+          {amount.toLocaleString("en-US", SIMPLE_CURRENCY_FORMAT)} {symbol}
         </Label>
 
         <Label size="sm-regular" style={styles.title}>
-          {amount.toLocaleString("pt-BR", CURRENCY_FORMAT)}
+          {amount.toLocaleString("en-US", CURRENCY_FORMAT)}
         </Label>
       </View>
 

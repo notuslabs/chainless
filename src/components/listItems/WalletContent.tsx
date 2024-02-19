@@ -50,12 +50,12 @@ export default function WalletContent({
           <WalletIcon />
 
           <Heading size="heading3">
-            {value.toLocaleString("pt-BR", SIMPLE_CURRENCY_FORMAT)}
+            {value.toLocaleString("en-US", SIMPLE_CURRENCY_FORMAT)}
           </Heading>
         </View>
 
         <Paragraph size="xs" style={styles.paragraph}>
-          {(value * price).toLocaleString("pt-BR", CURRENCY_FORMAT)}
+          {(value * price).toLocaleString("en-US", CURRENCY_FORMAT)}
         </Paragraph>
       </View>
     </View>

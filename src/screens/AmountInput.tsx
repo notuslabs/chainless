@@ -111,7 +111,7 @@ export default function AmountInput({
               />
 
               <Label size="sm-regular" style={{ color: dark.fg.muted }}>
-                {Number(balance).toLocaleString("pt-BR", {
+                {Number(balance).toLocaleString("en-US", {
                   ...SIMPLE_CURRENCY_FORMAT,
                   minimumSignificantDigits: 2,
                   maximumSignificantDigits: 6

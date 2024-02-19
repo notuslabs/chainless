@@ -34,7 +34,7 @@ export default function Transaction({
         </Paragraph>
 
         <Label size="sm-bold" style={styles.labelSMbold}>
-          {Number(amount).toLocaleString("pt-BR", {
+          {Number(amount).toLocaleString("en-US", {
             ...SIMPLE_CURRENCY_FORMAT,
             minimumFractionDigits: 2,
             maximumFractionDigits: 6

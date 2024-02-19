@@ -13,7 +13,7 @@ export type PriceChart = {
 
 async function getPriceChart(id: string, days: number): Promise<PriceChart> {
   const response = await geckoFetch(
-    `/coins/${id}/market_chart?vs_currency=brl&days=${days}${
+    `/coins/${id}/market_chart?vs_currency=usd&days=${days}${
       days > 7 ? "&interval=daily" : ""
     }`
   );

@@ -66,7 +66,7 @@ export default function CheckboxButton({
         >
           {loading ? null : (
             <Label style={{ marginLeft: "auto" }}>
-              {amount.toLocaleString("pt-BR", SIMPLE_CURRENCY_FORMAT)}
+              {amount.toLocaleString("en-US", SIMPLE_CURRENCY_FORMAT)}
             </Label>
           )}
         </Skeleton>

@@ -59,9 +59,9 @@ export function formatCurrency(
     .replace(/0+$/, "")
     .padEnd(precision ? minPrecision : 0, "0");
 
-  const format = new Intl.NumberFormat("pt-BR", {
+  const format = new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "BRL",
+    currency: "USD",
     minimumFractionDigits: decimal.length,
     maximumFractionDigits: decimal.length
   }).format(Number(`${integer}${decimal.length > 0 ? "." : ""}${decimal}`));

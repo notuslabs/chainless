@@ -1,5 +1,6 @@
-import { geckoFetch } from "@/lib/coingecko";
 import { useQuery } from "@tanstack/react-query";
+
+import { geckoFetch } from "@/lib/coingecko";
 
 //Cache / Update Frequency: every 60 seconds
 async function getTokenInfo(id: string) {

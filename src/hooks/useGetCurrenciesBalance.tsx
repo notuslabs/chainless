@@ -4,12 +4,12 @@ import { useQuery } from "@tanstack/react-query";
 import { useSession } from "@/context/auth";
 
 const tokens = [
-  {
-    currency: StableCurrency.BRZ,
-    image:
-      "https://assets.coingecko.com/coins/images/8472/standard/MicrosoftTeams-image_%286%29.png?1696508657",
-    coingeckoId: "brz"
-  },
+  // {
+  //   currency: StableCurrency.BRZ,
+  //   image:
+  //     "https://assets.coingecko.com/coins/images/8472/standard/MicrosoftTeams-image_%286%29.png?1696508657",
+  //   coingeckoId: "brz"
+  // },
   {
     currency: StableCurrency.USDC,
     image:

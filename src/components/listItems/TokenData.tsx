@@ -39,7 +39,7 @@ export default function TokenData({
 
       <View style={styles.rightContainer}>
         <Label size="xs-bold">
-          {price.toLocaleString("pt-BR", CURRENCY_FORMAT)}
+          {price.toLocaleString("en-US", CURRENCY_FORMAT)}
         </Label>
 
         <View style={{ flexDirection: "row", gap: spacing[4] }}>
@@ -48,7 +48,7 @@ export default function TokenData({
             size="xs-bold"
           >
             {change > 0 ? "+" : ""}
-            {change.toLocaleString("pt-BR", { maximumFractionDigits: 2 })}
+            {change.toLocaleString("en-US", { maximumFractionDigits: 2 })}
           </Label>
 
           <Label size="xs-regular">24h</Label>

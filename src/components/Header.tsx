@@ -4,8 +4,8 @@ import { View, StyleSheet } from "react-native";
 
 import Heading from "@/components/typography/Heading";
 import { dark, spacing, base, borderRadius } from "@/constants/DesignTokens";
-import { CURRENCY_FORMAT } from "@/constants/configurations";
 import { hideValuesAtom } from "@/lib/atoms";
+import { formatCurrency } from "@/utils/numerals";
 
 type HeaderProps = {
   total: string;
@@ -29,9 +29,7 @@ export default function Header({ total, change }: HeaderProps) {
           radius={borderRadius.small}
         >
           <Heading style={{ color: dark.fg["on-contrast"] }}>
-            {isHidden
-              ? "•••••"
-              : Number(total).toLocaleString("pt-br", CURRENCY_FORMAT)}
+            {isHidden ? "•••••" : formatCurrency(Number(total), 3)}
           </Heading>
         </Skeleton>
       </View>
