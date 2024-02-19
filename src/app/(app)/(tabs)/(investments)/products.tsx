@@ -13,7 +13,7 @@ export default function Investments() {
     <View style={styles.container}>
       <Heading size="heading5">ATIVOS FINANCEIROS</Heading>
 
-      <ListButton>
+      <ListButton onPress={() => router.push("/cryptocurrency/")}>
         <View style={styles.buttonContent}>
           <View style={styles.titleContainer}>
             <GrowthIcon width={24} height={24} />

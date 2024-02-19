@@ -1,0 +1,22 @@
+export const tokensList = [
+  "aave",
+  "balancer",
+  "chainlink",
+  "compound-governance-token",
+  "dai",
+  "frax",
+  "mimatic",
+  "maker",
+  "sushi",
+  "havven",
+  "tether",
+  "the-graph",
+  "uniswap",
+  "wrapped-bitcoin",
+  "weth",
+  "wrapped-avax",
+  "yearn-finance",
+  "stargate-finance",
+  "woo-network",
+  "frax-share"
+];

@@ -52,6 +52,7 @@ export default function AppLayout() {
       }}
     >
       <Stack.Screen name="(tabs)" />
+      <Stack.Screen name="(modals)" />
       <Stack.Screen
         name="settings"
         options={{ animation: "slide_from_bottom" }}
