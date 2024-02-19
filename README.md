@@ -60,7 +60,7 @@ $ npx expo start
 ```
 Ensure you have Android Studio and Node installed on your development machine.
 
-If you want to download our APK directly, access the link [here](https://expo.dev/).
+If you want to download our APK directly, access the link [here](https://expo.dev/accounts/notuslabs/projects/hackathon-avalanche/builds/9b1e2104-2d3b-40b3-9328-6421e63f2fa3).
 
 ## License
 
