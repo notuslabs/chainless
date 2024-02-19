@@ -30,13 +30,16 @@ Chainless is built with the following technologies:
 
 - **Particle Auth**: Integrating secure and user-friendly authentication with Google login.
   
-- **1inch**: We use 1inch to select optimal routes for swapping.
+- **ParaSwap**: We use ParaSwap to select optimal routes for swapping.
 
 ## 🖥️ Repository
 
 For the underlying backend powering Chainless, visit our repository:
 
 - [Chainless Smart Contract Repository](https://github.com/notuslabs/hackaton-contracts)
+- [AA Factory](https://snowtrace.io/address/0xCa5853C674f4a79C01d931d95cb87FFcbb2B57eB)
+- [Paymaster](https://snowtrace.io/address/0x2964937e03Cc57C82aA257D38E91aaB5e3B25abF)
+- [AA Example](https://snowtrace.io/address/0xe59bd466515Df05289B14BCce0Be3DeF2cD7EAd5)
 - [Chainless Backend Repository](https://github.com/notuslabs/hackathon-backend)
 
 ## 📥 Getting Started
