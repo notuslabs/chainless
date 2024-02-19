@@ -60,13 +60,13 @@ export default function TabLayout() {
       <Tabs.Screen
         name="(investments)"
         options={{
-          title: "Investimento"
+          title: "Investments"
         }}
       />
       <Tabs.Screen
         name="payments"
         options={{
-          title: "Pagamento"
+          title: "Payments"
         }}
       />
     </Tabs>

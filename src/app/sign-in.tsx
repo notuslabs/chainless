@@ -43,7 +43,7 @@ export default function SignIn() {
       />
 
       <View style={styles.loginContainer}>
-        <Heading>Torne-se Chainless</Heading>
+        <Heading>Become Chainless</Heading>
 
         <View style={{ gap: spacing[16], width: "100%" }}>
           <Controller
@@ -66,18 +66,18 @@ export default function SignIn() {
 
         <View style={styles.textContainer}>
           <Paragraph size="xs">
-            Ao criar uma conta você concorda com os nossos
+            By creating an account you agree to our
           </Paragraph>
 
           <View style={styles.linksWrapper}>
             <Paragraph size="xs" style={{ color: dark.fg.link }}>
-              Termos de Uso
+              Terms of use
             </Paragraph>
 
             <Paragraph size="xs">e</Paragraph>
 
             <Paragraph size="xs" style={{ color: dark.fg.link }}>
-              Política de Privacidade
+              Privacy Policy
             </Paragraph>
           </View>
         </View>

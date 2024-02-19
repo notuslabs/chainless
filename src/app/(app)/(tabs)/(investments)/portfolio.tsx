@@ -5,10 +5,7 @@ import { dark, spacing } from "@/constants/DesignTokens";
 
 export default function Investments() {
   return (
-    <ScrollView
-      style={styles.container}
-      showsVerticalScrollIndicator={false}
-    ></ScrollView>
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false} />
   );
 }
 

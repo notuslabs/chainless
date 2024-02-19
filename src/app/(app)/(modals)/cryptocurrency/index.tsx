@@ -9,7 +9,7 @@ export default function Cryptocurrency() {
 
   useEffect(() => {
     navigation.setOptions({
-      title: "Criptomoedas"
+      title: "Cryptocurrencies"
     });
   }, [navigation]);
 

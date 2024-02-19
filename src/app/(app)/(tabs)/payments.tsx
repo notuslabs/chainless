@@ -18,12 +18,11 @@ export default function Payments() {
 
       <View>
         <Heading size="heading5" style={{ marginBottom: spacing[8] }}>
-          Em Construção
+          Under construction
         </Heading>
 
         <Paragraph size="sm" style={{ marginBottom: spacing[12] }}>
-          A área de pagamentos está passando pelo processo de pesquisa e
-          desenvolvimento.
+          The payments area is going through the research and development.
         </Paragraph>
 
         <Divider />

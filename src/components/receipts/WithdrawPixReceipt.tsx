@@ -40,7 +40,7 @@ export default function WithdrawPixReceipt({
         </Label>
 
         <Label size="xs-regular" style={styles.title}>
-          ID da transação
+          Transaction ID
         </Label>
 
         <Pressable
@@ -59,7 +59,7 @@ export default function WithdrawPixReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Valor retirado
+          Amount withdraw
         </Label>
 
         <Label style={styles.value}>
@@ -73,7 +73,7 @@ export default function WithdrawPixReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Chave pix
+          Pix key
         </Label>
 
         <Label style={styles.value}>{pixKey}</Label>

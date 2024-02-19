@@ -11,8 +11,8 @@ export default function Layout() {
       }}
       tabBar={(props) => <CustomTopTabBar {...props} />}
     >
-      <Tabs.Screen name="portfolio" options={{ title: "PORTFÓLIO" }} />
-      <Tabs.Screen name="products" options={{ title: "PRODUTOS" }} />
+      <Tabs.Screen name="portfolio" options={{ title: "PORTFOLIO" }} />
+      <Tabs.Screen name="products" options={{ title: "PRODUCTS" }} />
     </MaterialTopTabs>
   );
 }

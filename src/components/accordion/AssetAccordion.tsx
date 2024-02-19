@@ -58,7 +58,7 @@ export default function AssetAccordion({ value }: AssetAccordionProps) {
         // }}
       >
         <View style={{ gap: spacing[4] }}>
-          <Heading size="heading5">Valor acumulado</Heading>
+          <Heading size="heading5">Accumulated value</Heading>
 
           <Heading size="heading2">{formatCurrency(value, 6)}</Heading>
 
