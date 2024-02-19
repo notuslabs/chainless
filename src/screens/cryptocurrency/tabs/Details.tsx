@@ -25,7 +25,7 @@ export default function Details({
 }: DetailsProps) {
   return (
     <View style={styles.container}>
-      <Heading size="heading3">Detalhes do produto</Heading>
+      <Heading size="heading3">Product Details</Heading>
 
       <View style={styles.contentView}>
         <Label size="sm-regular" style={styles.label}>
@@ -41,7 +41,7 @@ export default function Details({
         </Label>
 
         <Paragraph size="md-bold">
-          R${" "}
+          ${" "}
           {new Intl.NumberFormat("en-US", {
             notation: "compact",
             maximumFractionDigits: 2
@@ -51,11 +51,11 @@ export default function Details({
 
       <View style={styles.contentView}>
         <Label size="sm-regular" style={styles.label}>
-          Volume (24 horas)
+          Volume (24 hours)
         </Label>
 
         <Paragraph size="md-bold">
-          R${" "}
+          ${" "}
           {new Intl.NumberFormat("en-US", {
             notation: "compact",
             maximumFractionDigits: 2
@@ -65,7 +65,7 @@ export default function Details({
 
       <View style={styles.contentView}>
         <Label size="sm-regular" style={styles.label}>
-          Suprimento circulante
+          Circulating supply
         </Label>
 
         <Paragraph size="md-bold">
@@ -78,11 +78,11 @@ export default function Details({
 
       <View style={styles.contentView}>
         <Label size="sm-regular" style={styles.label}>
-          Máxima histórica
+          All-time high
         </Label>
 
         <Paragraph size="md-bold">
-          R${" "}
+          ${" "}
           {new Intl.NumberFormat("en-US", {
             notation: "compact",
             maximumFractionDigits: 2
@@ -92,7 +92,7 @@ export default function Details({
 
       <Pressable style={styles.link} onPress={() => Linking.openURL(link)}>
         <Label size="md-bold" style={styles.labelLink}>
-          Saiba mais
+          Learn more
         </Label>
 
         <ArrowLink />

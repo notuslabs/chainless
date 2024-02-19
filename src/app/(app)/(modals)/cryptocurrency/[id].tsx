@@ -62,7 +62,7 @@ export default function Cryptocurrency() {
 
       if (currentScreen === 1) {
         navigation.setOptions({
-          title: "Criptomoedas"
+          title: "Cryptocurrencies"
         });
       }
       return;
@@ -89,7 +89,7 @@ export default function Cryptocurrency() {
 
   useEffect(() => {
     navigation.setOptions({
-      title: "Criptomoedas"
+      title: "Cryptocurrencies"
     });
   }, [navigation]);
 
@@ -114,14 +114,14 @@ export default function Cryptocurrency() {
           onInvest={(event) => {
             setTokenOut(event);
             setTransactionType("invest");
-            navigation.setOptions({ title: `Investimento ${event.name}` });
+            navigation.setOptions({ title: `Investiment ${event.name}` });
 
             nextPage();
           }}
           onRedeem={(event) => {
             setTokenIn(event);
             setTransactionType("redeem");
-            navigation.setOptions({ title: `Retirada ${event.name}` });
+            navigation.setOptions({ title: `Withdrawal ${event.name}` });
 
             nextPage();
           }}
@@ -131,8 +131,8 @@ export default function Cryptocurrency() {
           key="2"
           title={
             transactionType === "invest"
-              ? "SELECIONE A MOEDA NA QUAL O DEPÓSITO SERÁ REALIZADO"
-              : "SELECIONE A MOEDA NA QUAL VOCÊ QUER QUE O RESGATE SEJA REALIZADO"
+              ? "SELECT THE CURRENCY IN WHICH THE DEPOSIT WILL BE MADE"
+              : "SELECT THE CURRENCY IN WHICH YOU WANT THE REDEMPTION TO BE MADE"
           }
           showBalanceZero={transactionType !== "invest"}
           onSelectCurrency={({ balance, balanceFiat, image, symbol }) => {
@@ -160,19 +160,19 @@ export default function Cryptocurrency() {
           key="3"
           title={
             transactionType === "invest"
-              ? "CONFIGURAÇÃO DO DEPÓSITO"
-              : "CONFIGURAÇÃO DO RESGATE"
+              ? "DEPOSIT SETTING"
+              : "REDEEM SETTING"
           }
           subTitle={
             transactionType === "invest"
-              ? "Quanto você deseja investir?"
-              : "Qual o valor do resgate?"
+              ? "How much do you want to invest?"
+              : "What is the redeem value?"
           }
           symbol={tokenIn.symbol}
           image={tokenIn.image}
           balance={tokenIn.balance}
           balanceFiat={tokenIn.balanceFiat.toString()}
-          disabledText="Insira um valor para investir"
+          disabledText="Enter an amount to invest"
           onNext={handleNext}
         />
 

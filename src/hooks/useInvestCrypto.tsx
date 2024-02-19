@@ -37,7 +37,7 @@ export default function useInvestCrypto() {
       if (error instanceof SwapFailedException) {
         setError(error?.extra?.error ?? "");
       } else {
-        setError("Não foi possivel pegar preço");
+        setError("Unable to get price");
       }
 
       setQuote(undefined);
@@ -62,7 +62,7 @@ export default function useInvestCrypto() {
       if (error instanceof SwapFailedException) {
         setError(error.message ?? "");
       } else {
-        setError("Não foi possivel fazer o swap");
+        setError("Unable to swap");
       }
 
       setSwapResponse(undefined);

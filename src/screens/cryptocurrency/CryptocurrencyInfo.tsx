@@ -83,7 +83,7 @@ export default function CryptocurrencyInfo({
                 tabBarHeight={48}
                 renderTabBar={(props) => <CustomTabBar {...props} />}
               >
-                <Tabs.Tab name="Informações">
+                <Tabs.Tab name="Information">
                   <Tabs.ScrollView
                     style={styles.scrollContainer}
                     fadingEdgeLength={100}
@@ -96,7 +96,7 @@ export default function CryptocurrencyInfo({
                   </Tabs.ScrollView>
                 </Tabs.Tab>
 
-                <Tabs.Tab name="Detalhes">
+                <Tabs.Tab name="Details">
                   <Tabs.ScrollView
                     style={styles.scrollContainer}
                     fadingEdgeLength={100}
@@ -119,7 +119,7 @@ export default function CryptocurrencyInfo({
                 BigNumber(cryptoBalance?.balance ?? 0).gt(0) ? (
                   <View style={{ flex: 1 }}>
                     <Button
-                      text="Vender"
+                      text="Sell"
                       leadingIcon={
                         <ArrowCircleUpRight
                           stroke="white"
@@ -147,7 +147,7 @@ export default function CryptocurrencyInfo({
 
                 <View style={{ flex: 1 }}>
                   <Button
-                    text="Comprar"
+                    text="Buy"
                     leadingIcon={
                       <CirclePlusSmallIcon stroke={dark.fg["on-contrast"]} />
                     }

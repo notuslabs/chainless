@@ -41,8 +41,8 @@ export default function ConfirmInvestment({
         <View style={{ gap: spacing[16] }}>
           <Heading size="heading5">
             {transactionType === "invest"
-              ? "DETALHES DA APLICAÇÃO EM CRIPTOMOEDA"
-              : "DETALHES DO RESGATE DE CRIPTOMOEDA"}
+              ? "CRYPTOCURRENCY APPLICATION DETAILS"
+              : "CRYPTO CURRENCY REDEMPTION DETAILS"}
           </Heading>
         </View>
 
@@ -50,8 +50,8 @@ export default function ConfirmInvestment({
           <View style={{ gap: spacing[8] }}>
             <Label size="sm-regular" style={{ color: base.grey[40] }}>
               {transactionType === "invest"
-                ? "Valor do investimento"
-                : "Valor do resgate"}
+                ? "Investment value"
+                : "Redemption value"}
             </Label>
 
             <View style={styles.flexRow}>
@@ -80,7 +80,7 @@ export default function ConfirmInvestment({
             </View>
 
             <Label size="sm-regular" style={{ color: base.grey[40] }}>
-              Quantidade a ser recebida
+              Quantity to be received
             </Label>
 
             <View style={styles.flexRow}>
@@ -113,15 +113,15 @@ export default function ConfirmInvestment({
 
           <View style={styles.flexContainer}>
             <Label size="sm-regular" style={styles.labelSmall}>
-              Resgate
+              Redeem
             </Label>
 
-            <Label>Disponibilidade Diária</Label>
+            <Label>Daily Availability</Label>
           </View>
 
           <View style={styles.flexContainer}>
             <Label size="sm-regular" style={styles.labelSmall}>
-              Variação (24 horas)
+              Variation (24 hours)
             </Label>
 
             <Label
@@ -148,10 +148,10 @@ export default function ConfirmInvestment({
 
           <View style={styles.flexContainer}>
             <Label size="sm-regular" style={styles.labelSmall}>
-              Taxa de operação
+              Operating fee
             </Label>
 
-            <Label>R$ 0,10</Label>
+            <Label>$ 0,10</Label>
           </View>
         </View>
 
@@ -159,8 +159,8 @@ export default function ConfirmInvestment({
           <Button
             text={
               transactionType === "invest"
-                ? "Confirmar investimento"
-                : "Confirmar resgate"
+                ? "Confirm investment"
+                : "Confirm redemption"
             }
             onPress={handleConfirm}
           />

@@ -10,7 +10,7 @@ export default function History() {
 
   return (
     <View style={style.container}>
-      <Heading size="heading5">HISTÓRICO DE TRANSAÇÕES</Heading>
+      <Heading size="heading5">TRANSACTION HISTORY</Heading>
 
       {data
         ? data.transactions.slice(0, 10).map((item, i) => (

@@ -103,7 +103,7 @@ export default function Investments() {
         <>
           <View style={styles.infoContainer}>
             <Heading size="heading3" style={{ marginBottom: 2 }}>
-              Total investido
+              Total invested
             </Heading>
 
             <Heading style={{ marginBottom: 10 }}>
@@ -125,13 +125,13 @@ export default function Investments() {
           />
 
           <Heading style={styles.composition} size="heading5">
-            COMPOSIÇÃO
+            COMPOSITION
           </Heading>
 
           {assetsTotal <= 0 ? (
             <View style={{ paddingBottom: 120 }}>
               <Paragraph size="md">
-                Você ainda não realizou nenhum investimento
+                You haven't made any investments yet
               </Paragraph>
             </View>
           ) : (

@@ -46,13 +46,13 @@ export default function Crypto() {
     <>
       <Stack.Screen
         options={{
-          title: "Depósito Cripto",
+          title: "Crypto Deposit",
           headerLeft: () => <BackNavigation />
         }}
       />
 
       <SelectCurrency
-        title="SELECIONE A MOEDA NA QUAL O DEPÓSITO SERÁ REALIZADO"
+        title="SELECT THE CURRENCY IN WHICH THE DEPOSIT WILL BE MADE"
         onSelectCurrency={({ symbol, image }) => {
           setCurrency({
             symbol,
@@ -67,10 +67,10 @@ export default function Crypto() {
 
       <BottomSheet bottomSheetModalRef={bottomSheetModalRef} height={452}>
         <View style={styles.contentContainer}>
-          <Heading size="heading5">CONFIGURAÇÃO DE DEPÓSITO</Heading>
+          <Heading size="heading5">DEPOSIT SETTING</Heading>
 
           <WarningCard
-            text={`Envie somente ${currency.symbol} para este endereço na rede ${NETWORK}`}
+            text={`Send only ${currency.symbol} to this address on the network ${NETWORK}`}
           />
 
           <View style={{ gap: spacing[16] }}>
@@ -80,7 +80,7 @@ export default function Crypto() {
                 color: base.grey[40]
               }}
             >
-              Moeda selecionada para depósito
+              Currency selected for deposit
             </Label>
 
             <View style={styles.nameWrapper}>
@@ -105,7 +105,7 @@ export default function Crypto() {
                 color: base.grey[40]
               }}
             >
-              Rede
+              Network
             </Label>
 
             <Label>{NETWORK}</Label>
@@ -118,7 +118,7 @@ export default function Crypto() {
                 color: base.grey[40]
               }}
             >
-              Endereço
+              Address
             </Label>
 
             <View

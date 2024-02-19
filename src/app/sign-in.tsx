@@ -61,7 +61,7 @@ export default function SignIn() {
             name={EMAIL}
           />
 
-          <Button text="Enviar código" onPress={handleSubmit(onSubmit)} />
+          <Button text="Send code" onPress={handleSubmit(onSubmit)} />
         </View>
 
         <View style={styles.textContainer}>

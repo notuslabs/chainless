@@ -52,7 +52,7 @@ export default function InvestmentCryptocurrencyReceipt({
         </Label>
 
         <Label size="xs-regular" style={styles.title}>
-          ID da transação
+          Transaction ID
         </Label>
 
         <Pressable
@@ -85,7 +85,7 @@ export default function InvestmentCryptocurrencyReceipt({
       </View>
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          {transactionType === "invest" ? "Valor investido" : "Valor resgatado"}
+          {transactionType === "invest" ? "Amount invested" : "Value redeemed"}
         </Label>
 
         <Label style={styles.value}>

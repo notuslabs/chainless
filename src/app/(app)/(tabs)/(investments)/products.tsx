@@ -32,7 +32,7 @@ export default function Investments() {
           <View style={styles.titleContainer}>
             <SavingIcon width={24} height={24} />
 
-            <Heading size="heading4">Renda Fixa</Heading>
+            <Heading size="heading4">Fixed Income</Heading>
           </View>
 
           <Paragraph size="sm" style={{ color: base.grey[40] }}>

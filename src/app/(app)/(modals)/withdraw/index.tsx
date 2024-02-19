@@ -14,7 +14,7 @@ export default function Withdraw() {
     <>
       <Stack.Screen
         options={{
-          title: "Retirada de saldo",
+          title: "Balance withdrawal",
           headerLeft: () => <BackNavigation />
         }}
       />

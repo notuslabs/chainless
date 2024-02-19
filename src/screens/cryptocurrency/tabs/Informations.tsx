@@ -18,7 +18,7 @@ export default function Informations({ summary, site }: InformationsProps) {
       <View>
         <Pressable style={styles.link} onPress={() => Linking.openURL(site)}>
           <Label size="md-bold" style={styles.label}>
-            Site Oficial
+            Official site
           </Label>
 
           <ArrowLink />

@@ -44,7 +44,7 @@ export default function Transaction({
       </View>
 
       <Label size="sm-bold" style={styles.transactionType}>
-        {type === "deposit" ? "Depósito" : "Retirada"} {asset}
+        {type === "deposit" ? "Deposit" : "Withdrawal"} {asset}
       </Label>
     </View>
   );

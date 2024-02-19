@@ -29,8 +29,8 @@ const ADDRESS = "address";
 const addressInputSchema = z.object({
   [ADDRESS]: z
     .string()
-    .startsWith("0x", "O endereço precisa começar com 0x")
-    .regex(/0x[0-9a-fA-F]{40}/, "Não é um endereço valido")
+    .startsWith("0x", "The address must start with 0x")
+    .regex(/0x[0-9a-fA-F]{40}/, "Not a valid address")
     .length(42)
 });
 
@@ -84,14 +84,14 @@ export default function WithdrawAddress({
 
   return (
     <Container style={styles.container}>
-      <Heading size="heading5">CONFIGURAÇÃO DO SAQUE</Heading>
+      <Heading size="heading5">WITHDRAWAL SETUP</Heading>
 
-      <Paragraph size="md">Defina o endereço cripto para envio</Paragraph>
+      <Paragraph size="md">Set the crypto shipping address</Paragraph>
       <Controller
         control={control}
         render={({ field: { onChange, value, onBlur } }) => (
           <TextField
-            placeholder="Digite o endereço cripto"
+            placeholder="Enter crypto address"
             icon={<MailIcon />}
             value={value}
             error={errors.address?.message}
@@ -115,7 +115,7 @@ export default function WithdrawAddress({
             color: base.grey[40]
           }}
         >
-          Quantidade a ser retirada
+          Amount to be withdrawn
         </Label>
 
         <View
@@ -141,7 +141,7 @@ export default function WithdrawAddress({
             color: base.grey[40]
           }}
         >
-          Rede
+          Network
         </Label>
 
         <Label>{NETWORK}</Label>
@@ -149,7 +149,7 @@ export default function WithdrawAddress({
 
       <View style={{ marginTop: "auto" }}>
         <Button
-          text="Confirmar retirada"
+          text="Confirm withdrawal"
           disabled={watchAddress === undefined}
           onPress={handleSubmit(onSubmit)}
         />
@@ -172,8 +172,8 @@ export default function WithdrawAddress({
               </View>
             ) : (
               <TransactionSuccess
-                title="Saque confirmado"
-                buttonLabel="Voltar para o dashboard"
+                title="Withdrawal confirmed"
+                buttonLabel="Return to dashboard"
                 onBack={handleBack}
               >
                 <WithdrawReceipt

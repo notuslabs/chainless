@@ -25,7 +25,7 @@ export default function TabLayout() {
       tabBar={customBottomTab}
       screenOptions={{
         ...HEADER_CONFIG,
-        headerTitle: `Olá, ${userInfo?.name ?? userInfo?.email}`,
+        headerTitle: `Hi, ${userInfo?.name ?? userInfo?.email}`,
         headerStyle: {
           height: 100
         },

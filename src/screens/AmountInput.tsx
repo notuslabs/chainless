@@ -41,7 +41,7 @@ export default function AmountInput({
     [AMOUNT]: z.coerce
       .number()
       .gt(0)
-      .max(Number(balance), "Você não tem saldo suficiente")
+      .max(Number(balance), "You don't have enough balance")
   });
 
   type AmountInputSchema = z.infer<typeof amountInputSchema>;
@@ -96,7 +96,7 @@ export default function AmountInput({
               <View style={styles.leftWrapper}>
                 <WalletIcon width={16} height={16} />
 
-                <Label size="sm-regular">Saldo</Label>
+                <Label size="sm-regular">Balance</Label>
               </View>
 
               <Label size="sm-regular">

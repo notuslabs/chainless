@@ -22,14 +22,14 @@ export default function WithdrawMethod({
   return (
     <Container style={styles.container}>
       <Heading size="heading5">
-        SELECIONE A FORMA QUE VOCÊ VAI FAZER A RETIRADA DO SALDO
+        SELECT THE WAY YOU WILL WITHDRAW YOUR BALANCE
       </Heading>
 
       <View style={{ gap: spacing[16] }}>
         <ListButton onPress={() => onSelectMethod({ type: "crypto" })}>
           <ActionContent
             icon={<BitcoinCryptoIcon />}
-            title="Saque para carteira cripto"
+            title="Withdrawal to crypto wallet"
             description="Lorem ipsum alea jacta est habeas corpus omnia et bovis et omnia"
           />
         </ListButton>
@@ -37,8 +37,8 @@ export default function WithdrawMethod({
         <ListButton onPress={() => onSelectMethod({ type: "pix" })} disabled>
           <ActionContent
             icon={<PixIcon />}
-            title="Saque por pix"
-            description="Faça retiradas rapidamente em reais utilizando o Pix."
+            title="Withdraw by pix"
+            description="Make quick withdrawals in dollars using Pix."
           />
         </ListButton>
       </View>

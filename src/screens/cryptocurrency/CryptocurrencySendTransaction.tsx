@@ -40,10 +40,10 @@ export default function CryptocurrencySendTransaction({
             <TransactionSuccess
               title={
                 transactionType === "invest"
-                  ? "Compra confirmada"
-                  : "Venda confirmada"
+                  ? "Purchase confirmed"
+                  : "Sale confirmed"
               }
-              buttonLabel="Voltar para investimentos"
+              buttonLabel="Return to investments"
               onBack={handleBack}
             >
               <InvestmentCryptocurrencyReceipt

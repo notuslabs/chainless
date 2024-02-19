@@ -19,7 +19,7 @@ export default function RootLayout() {
       <Stack
         screenOptions={{
           ...CUSTOM_HEADER_CONFIG,
-          title: "Configurações",
+          title: "Settings",
           headerStyle: {
             backgroundColor: dark.bg.canvas
           },

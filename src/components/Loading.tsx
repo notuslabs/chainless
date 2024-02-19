@@ -10,7 +10,7 @@ export default function Loading() {
 
   return (
     <Animated.View style={styles.container} exiting={FadeOut.duration(400)}>
-      <Label size="md-bold">Processando transação...</Label>
+      <Label size="md-bold">Processing transaction...</Label>
       <Label size="md-bold">
         {timeUnits.minutes}:{timeUnits.seconds}
       </Label>

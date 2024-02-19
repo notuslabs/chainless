@@ -12,7 +12,7 @@ export default function Deposit() {
     <>
       <Stack.Screen
         options={{
-          title: "Depósito de saldo",
+          title: "Balance deposit",
           headerLeft: () => <BackNavigation />
         }}
       />

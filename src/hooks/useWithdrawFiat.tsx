@@ -36,7 +36,7 @@ export default function useWithdrawFiat() {
         setError(error.message);
       }
 
-      setError("Não foi possível executar sua transação");
+      setError("Your transaction could not be executed");
     }
 
     setIsSending(false);

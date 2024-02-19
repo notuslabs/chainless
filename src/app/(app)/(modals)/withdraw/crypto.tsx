@@ -59,7 +59,7 @@ export default function Crypto() {
     <>
       <Stack.Screen
         options={{
-          title: "Retirada Cripto",
+          title: "Crypto Withdrawal",
           headerLeft: () => <BackNavigation onPress={previousPage} />
         }}
       />
@@ -73,15 +73,15 @@ export default function Crypto() {
       >
         <SelectCurrency
           key="1"
-          title="SELECIONE A MOEDA PARA SAQUE"
+          title="SELECT CURRENCY TO WITHDRAW"
           onSelectCurrency={handleSelectCurrency}
         />
 
         <AmountInput
           key="2"
-          title="CONFIGURAÇÃO DO SAQUE"
-          subTitle="Digite o valor que deseja depositar"
-          disabledText="Insira um valor para saque"
+          title="WITHDRAWAL SETTING"
+          subTitle="Enter the amount you wish to deposit"
+          disabledText="Enter a withdrawal amount"
           onNext={handleNext}
           symbol={currency.symbol}
           balance={currency.balance}

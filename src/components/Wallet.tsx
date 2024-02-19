@@ -21,27 +21,27 @@ const CARD_HEIGHT = CARD_WIDTH * (109 / 213);
 
 const buttons = [
   {
-    name: "Depositar",
+    name: "Deposit",
     icon: <CirclePlusIcon />,
     route: "/deposit"
   },
   {
-    name: "Retirar",
+    name: "Withdraw",
     icon: <ArrowCircleUpRightIcon />,
     route: "/withdraw"
   },
   {
-    name: "Investir",
+    name: "Invest",
     icon: <SavingIcon width={32} height={32} />,
     route: "/products"
   },
   {
-    name: "Converter",
+    name: "Convert",
     icon: <ExchangeIcon />,
     route: "/convert"
   },
   {
-    name: "Transferir",
+    name: "Transfer",
     icon: <NavigationPointerIcon />,
     route: "/transfer"
   }
@@ -61,7 +61,7 @@ export default function Wallet() {
   return (
     <View style={styles.container}>
       <Heading size="heading5" style={styles.heading5}>
-        SALDO PARA INVESTIR
+        BALANCE TO INVEST
       </Heading>
 
       <ScrollView

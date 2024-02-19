@@ -20,14 +20,14 @@ export default function DepositMethod({ onSelectMethod }: DepositMethodProps) {
   return (
     <Container style={styles.container}>
       <Heading size="heading5">
-        SELECIONE A MOEDA NA QUAL O DEPÓSITO SERÁ REALIZADO
+        SELECT THE CURRENCY IN WHICH THE DEPOSIT WILL BE MADE
       </Heading>
 
       <View style={{ gap: spacing[16] }}>
         <ListButton onPress={() => onSelectMethod({ type: "crypto" })}>
           <ActionContent
             icon={<BitcoinCryptoIcon />}
-            title="Transferência por Cripto"
+            title="Crypto Transfer"
             description="Lorem ipsum alea jacta est habeas corpus omnia et bovis et omnia"
           />
         </ListButton>
@@ -35,8 +35,8 @@ export default function DepositMethod({ onSelectMethod }: DepositMethodProps) {
         <ListButton onPress={() => onSelectMethod({ type: "pix" })} disabled>
           <ActionContent
             icon={<PixIcon />}
-            title="Depósito por Pix"
-            description="Faça depósitos em reais rapidamente utilizando o Pix."
+            title="Deposit by Pix"
+            description="Make deposits in reais quickly using Pix."
           />
         </ListButton>
       </View>

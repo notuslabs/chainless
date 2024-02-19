@@ -71,7 +71,7 @@ export default function CryptocurrencyHeader({
       <View style={{ gap: 34 }}>
         <View style={{ gap: spacing[12] }}>
           <View style={{ gap: spacing[4] }}>
-            <Heading size="heading5">Preço de {symbol.toUpperCase()}</Heading>
+            <Heading size="heading5">{symbol.toUpperCase()} Price</Heading>
 
             <Heading size="heading2">
               {price.toLocaleString("en-US", CURRENCY_FORMAT)}
