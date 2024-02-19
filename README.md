@@ -1,10 +1,12 @@
-![chainless](https://github.com/notuslabs/)
+![chainless](https://github.com/notuslabs/chainless/assets/35041924/b5d5e8ae-84d1-452e-ab0b-fe2fdb32989f)
 
 # 📱 Chainless - Your Innovative Smart Mobile Wallet
 
-Discover the future of mobile wallets through Chainless.
+Discover the future of mobile wallets through Chainless, an advanced solution that leverages the revolutionary potential of Particle Network technology.
+Step beyond the boundaries of conventional externally owned accounts (EOAs), as we fully embrace the Omnichain Account Abstraction infrastructure.
+Chainless introduces the next era of mobile wallets, harnessing the transformative capabilities of Particle Network technology to redefine your wallet experience.
 
-To learn more about Notus Wallet, check out our introductory video:
+To learn more about Chainless, check out our introductory video:
 [Chainless Intro Video](https://www.loom.com/)
 
 
@@ -16,24 +18,28 @@ To learn more about Notus Wallet, check out our introductory video:
 
 - **Introducing Vaults**: Unlock the potential of Vaults, a revolutionary feature allowing users to create isolated portfolios tailored to diverse financial goals. Vaults isn't just a tool; it's your financial companion.
 
-- **Particle Network**: 
+- **Particle Network**: Particle Auth for seamless authentication. This cutting-edge technology enhances security and simplifies the login process. We have integrated Particle Auth for authentication, enabling you to create your account abstraction with Google login.
 
 ## 🚀 Technologies Used
 
-Notus Wallet is built with the following technologies:
+Chainless is built with the following technologies:
 
 - **React Native**: A powerful framework for building cross-platform mobile applications.
+
+- **Omnichain Account Abstraction**: Leveraging Omnichain Account Abstraction technology for a frictionless crypto experience.
+
+- **Particle Auth**: Integrating secure and user-friendly authentication with Google login.
   
 - **1inch**: We use 1inch to select optimal routes for swapping.
 
 ## 🖥️ Repository
 
-For the underlying smart contract powering Notus Wallet, visit our repository:
-[Notus Wallet Smart Contract Repository](https://github.com/notuslabs/)
+For the underlying smart contract powering Chainless, visit our repository:
+[Chainless Smart Contract Repository](https://github.com/notuslabs/)
 
 ## 📥 Getting Started
 
-To get started with Notus Wallet:
+To get started with Chainless:
 
 ```bash
 $ git clone https://github.com/notuslabs/
