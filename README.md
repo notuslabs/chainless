@@ -7,7 +7,7 @@ Step beyond the boundaries of conventional externally owned accounts (EOAs), as 
 Chainless introduces the next era of mobile wallets, harnessing the transformative capabilities of Particle Network technology to redefine your wallet experience.
 
 To learn more about Chainless, check out our introductory video:
-[Chainless Intro Video](https://www.loom.com/)
+[Chainless Intro Video](https://www.loom.com/share/9996fad6ef95471784356fdf32aec177?sid=51353760-32a4-464d-9c3d-3010ca50a6b0)
 
 
 ## 🔗 Features
