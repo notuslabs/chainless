@@ -11,19 +11,18 @@ import { dark, base, spacing } from "@/constants/DesignTokens";
 export default function Investments() {
   return (
     <View style={styles.container}>
-      <Heading size="heading5">ATIVOS FINANCEIROS</Heading>
+      <Heading size="heading5">FINANCIAL ASSETS</Heading>
 
       <ListButton onPress={() => router.push("/cryptocurrency/")}>
         <View style={styles.buttonContent}>
           <View style={styles.titleContainer}>
             <GrowthIcon width={24} height={24} />
 
-            <Heading size="heading4">Criptomoedas</Heading>
+            <Heading size="heading4">Cryptocurrencies</Heading>
           </View>
 
           <Paragraph size="sm" style={{ color: base.grey[40] }}>
-            Produtos de investimento que utilizam moedas digitais
-            descentralizadas.
+            Investment products that use decentralized digital currencies.
           </Paragraph>
         </View>
       </ListButton>
@@ -37,7 +36,7 @@ export default function Investments() {
           </View>
 
           <Paragraph size="sm" style={{ color: base.grey[40] }}>
-            Produtos de investimento com baixo risco e retorno previsível.
+            Investment products with low risk and predictable returns.
           </Paragraph>
         </View>
       </ListButton>

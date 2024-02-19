@@ -40,7 +40,7 @@ export default function Settings() {
             signOut();
           }}
         >
-          <Label size="sm-regular">Encerrar sessão</Label>
+          <Label size="sm-regular">Log out</Label>
         </SettingsButton>
 
         <Paragraph
@@ -49,8 +49,8 @@ export default function Settings() {
             paddingHorizontal: spacing[16]
           }}
         >
-          Não é necessário encerrar a sessão. Para manter sua conta segura,
-          sempre vamos pedir sua confirmação quando abrir o app.
+          It is not necessary to close the session. To keep your account secure, 
+          We will always ask for your confirmation when you open the app.
         </Paragraph>
       </View>
     </View>

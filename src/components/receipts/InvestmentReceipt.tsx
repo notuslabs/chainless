@@ -43,7 +43,7 @@ export default function InvestmentReceipt({
         </Label>
 
         <Label size="xs-regular" style={styles.title}>
-          ID da transação
+          Transaction ID
         </Label>
 
         <Pressable
@@ -62,7 +62,7 @@ export default function InvestmentReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Aplicação
+          Application
         </Label>
 
         <Label style={styles.value}>Backed IB01 $ Treasury Bond 0-1yr</Label>
@@ -70,7 +70,7 @@ export default function InvestmentReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Valor investido
+          Amount invested
         </Label>
 
         <Label style={styles.value}>
@@ -84,7 +84,7 @@ export default function InvestmentReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Rentabilidade
+          Profitability
         </Label>
 
         <Label style={styles.value}>YTM 5.29%</Label>
@@ -92,7 +92,7 @@ export default function InvestmentReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Resgate
+          Redeem 
         </Label>
 
         <Label style={styles.value}>D+ 1</Label>

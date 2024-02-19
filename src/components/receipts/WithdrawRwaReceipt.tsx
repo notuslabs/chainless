@@ -38,7 +38,7 @@ export default function WithdrawRwaReceipt({
         </Label>
 
         <Label size="xs-regular" style={styles.title}>
-          ID da transação
+          Transaction ID
         </Label>
 
         <Pressable
@@ -57,7 +57,7 @@ export default function WithdrawRwaReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Aplicação
+          Application
         </Label>
 
         <Label style={styles.value}>Backed IB01 $ Treasury Bond 0-1yr</Label>
@@ -65,7 +65,7 @@ export default function WithdrawRwaReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Resgate realizado
+          Redemption Accomplished
         </Label>
 
         <Label style={styles.value}>

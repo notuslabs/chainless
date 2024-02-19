@@ -46,7 +46,7 @@ export default function FixedIncomeCard({
 
       <View style={styles.infoContainer}>
         <Label size="xs-regular" style={{ color: base.grey[40] }}>
-          Rentabilidade
+          Profitability
         </Label>
 
         <Label size="xs-bold" style={{ color: dark.fg.success }}>
@@ -56,7 +56,7 @@ export default function FixedIncomeCard({
 
       <View style={styles.infoContainer}>
         <Label size="xs-regular" style={{ color: base.grey[40] }}>
-          Risco
+          Risk
         </Label>
 
         <Badge text={risk} style={{ backgroundColor: dark.fg.success }} />
@@ -64,7 +64,7 @@ export default function FixedIncomeCard({
 
       <View style={styles.infoContainer}>
         <Label size="xs-regular" style={{ color: base.grey[40] }}>
-          Resgate
+          Redeem
         </Label>
 
         <Label size="xs-bold">{rescue}</Label>

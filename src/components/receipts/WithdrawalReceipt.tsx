@@ -40,7 +40,7 @@ export default function WithdrawReceipt({
         </Label>
 
         <Label size="xs-regular" style={styles.title}>
-          ID da transação
+          Transaction ID
         </Label>
 
         <Pressable
@@ -59,7 +59,7 @@ export default function WithdrawReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Valor retirado
+          Amount withdrawn
         </Label>
 
         <Label style={styles.value}>
@@ -73,7 +73,7 @@ export default function WithdrawReceipt({
 
       <View style={styles.item}>
         <Label size="xs-regular" style={styles.title}>
-          Endereço
+          Address
         </Label>
 
         <Label style={styles.value}>{address}</Label>
