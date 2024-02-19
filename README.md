@@ -34,8 +34,10 @@ Chainless is built with the following technologies:
 
 ## 🖥️ Repository
 
-For the underlying smart contract powering Chainless, visit our repository:
-[Chainless Smart Contract Repository](https://github.com/notuslabs/)
+For the underlying backend powering Chainless, visit our repository:
+[Chainless Smart Contract Repository](https://github.com/notuslabs/hackaton-contracts)
+
+[Chainless Backend Repository](https://github.com/notuslabs/hackaton-backend)
 
 ## 📥 Getting Started
 
