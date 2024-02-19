@@ -1,5 +1,7 @@
+import { Client } from "@notuslabs/wallet";
 import { Avalanche } from "@particle-network/chains";
 import * as particleAuth from "@particle-network/rn-auth";
+import { ParticleInfo, ParticleProvider } from "@particle-network/rn-auth";
 import { router } from "expo-router";
 import { useEffect, useState, createContext, useContext } from "react";
 
@@ -8,7 +10,7 @@ interface AuthContextValue {
   signOut: () => Promise<void>;
   userInfo: particleAuth.UserInfo | undefined;
   isLoading: boolean;
-  key: string;
+  client: Client | undefined;
 }
 
 const chainInfo = Avalanche;
@@ -16,12 +18,19 @@ const env = particleAuth.Env.Dev;
 const type = particleAuth.LoginType.Email;
 const supportAuthType = [particleAuth.SupportAuthType.Email];
 
+const projectId = process.env.EXPO_PUBLIC_PARTICLE_PROJECTID as string;
+const clientKey = process.env.EXPO_PUBLIC_PARTICLE_CLIENTKEY as string;
+ParticleInfo.projectId = projectId;
+ParticleInfo.clientKey = clientKey;
+
 const AuthContext = createContext<AuthContextValue | null>(null);
 
 export function SessionProvider(props: React.PropsWithChildren) {
-  const [key, setKey] = useState<string>("");
+  const [address, setAddress] = useState<string | undefined>();
+  const [provider, setProvider] = useState<ParticleProvider>();
   const [userInfo, setUserInfo] = useState<particleAuth.UserInfo | undefined>();
   const [isSignIn, setIsSignIn] = useState(true);
+  const [client, setClient] = useState<Client | undefined>();
 
   async function login(email: string) {
     setIsSignIn(true);
@@ -31,7 +40,16 @@ export function SessionProvider(props: React.PropsWithChildren) {
     if (result.status) {
       const userInfo = result.data as particleAuth.UserInfo;
 
+      const provider = new ParticleProvider({
+        clientKey,
+        projectId
+      });
+      const address = await particleAuth.getAddress();
+
       setUserInfo(userInfo);
+      setProvider(provider);
+      setAddress(address);
+
       setIsSignIn(false);
       router.replace("/");
     } else {
@@ -44,7 +62,10 @@ export function SessionProvider(props: React.PropsWithChildren) {
     const result = await particleAuth.fastLogout();
     if (result.status) {
       setUserInfo(undefined);
-      setKey("");
+      setProvider(undefined);
+      setAddress(undefined);
+      setClient(undefined);
+
       console.log(result.data);
     } else {
       const error = result.data;
@@ -58,9 +79,18 @@ export function SessionProvider(props: React.PropsWithChildren) {
       const result = await particleAuth.isLogin();
 
       if (result) {
-        //  setKey();
         const result = await particleAuth.getUserInfo();
         const userInfo = JSON.parse(result);
+
+        const provider = new ParticleProvider({
+          clientKey,
+          projectId
+        });
+
+        const address = await particleAuth.getAddress();
+
+        setProvider(provider);
+        setAddress(address);
         setUserInfo(userInfo);
       }
 
@@ -70,6 +100,20 @@ export function SessionProvider(props: React.PropsWithChildren) {
     init();
   }, []);
 
+  useEffect(() => {
+    if (!provider) {
+      return;
+    }
+
+    if (!address) {
+      return;
+    }
+
+    const client = new Client({ provider, account: address as `0x${string}` });
+
+    setClient(client);
+  }, [provider, address]);
+
   return (
     <AuthContext.Provider
       value={{
@@ -77,7 +121,7 @@ export function SessionProvider(props: React.PropsWithChildren) {
         signOut: logout,
         userInfo,
         isLoading: isSignIn,
-        key
+        client
       }}
     >
       {props.children}

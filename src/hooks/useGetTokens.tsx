@@ -35,7 +35,7 @@ export type GetTokens = {
 // Cache / Update Frequency: every 45 seconds
 async function getTokens(): Promise<GetTokens[]> {
   const response = await geckoFetch(
-    `/coins/markets?vs_currency=brl&ids=${tokensList.toString()}&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en`
+    `/coins/markets?vs_currency=usd&ids=${tokensList.toString()}&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en`
   );
   const tokens = await response.json();
 

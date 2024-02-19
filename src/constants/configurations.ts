@@ -6,12 +6,12 @@ export const BLURHASH =
 export const CURRENCY_FORMAT = {
   minimumFractionDigits: 2,
   style: "currency",
-  currency: "BRL"
+  currency: "USD"
 };
 
 export const SIMPLE_CURRENCY_FORMAT = {
   minimumFractionDigits: 2,
-  currency: "BRL"
+  currency: "USD"
 };
 
 export const NETWORK = "Avalanche";

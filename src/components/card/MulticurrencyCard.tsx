@@ -12,6 +12,7 @@ import {
   SIMPLE_CURRENCY_FORMAT
 } from "@/constants/configurations";
 import { hideValuesAtom } from "@/lib/atoms";
+import { formatCurrency } from "@/utils/numerals";
 
 type MulticurrencyCardProps = {
   currency: string;
@@ -50,13 +51,11 @@ export default function MulticurrencyCard({
         <Heading size="heading2" style={styles.heading2}>
           {isHidden
             ? "•••••"
-            : Number(amount).toLocaleString("pt-BR", SIMPLE_CURRENCY_FORMAT)}
+            : Number(amount).toLocaleString("en-US", SIMPLE_CURRENCY_FORMAT)}
         </Heading>
 
         <Paragraph size="sm" style={styles.paragraph}>
-          {isHidden
-            ? "•••••"
-            : (Number(amount) * price).toLocaleString("pt-BR", CURRENCY_FORMAT)}
+          {isHidden ? "•••••" : formatCurrency(Number(amount), 3)}
         </Paragraph>
       </View>
     </View>

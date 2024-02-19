@@ -31,7 +31,7 @@ export default function Composition({
         <Paragraph size="md">{name}</Paragraph>
         <View style={styles.valueInvest}>
           <Paragraph style={{ marginRight: 8 }} size="md">
-            {amount.toLocaleString("pt-BR", {
+            {amount.toLocaleString("en-US", {
               ...CURRENCY_FORMAT,
               maximumFractionDigits: 6
             })}
@@ -41,7 +41,7 @@ export default function Composition({
       <View>
         <View style={styles.percentageValue}>
           <Label size="md-bold">
-            {percentage.toLocaleString("pt-BR", {
+            {percentage.toLocaleString("en-US", {
               style: "percent",
               minimumFractionDigits: 2
             })}
