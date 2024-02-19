@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "chainless",
-    "slug": "chainless",
+    "name": "hackathon-avalanche",
+    "slug": "hackathon-avalanche",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -38,6 +38,15 @@
     "experiments": {
       "typedRoutes": true,
       "tsconfigPaths": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f4b19a59-df96-49e2-a41a-c95c5cefa345"
+      }
+    },
+    "owner": "notuslabs"
   }
 }
