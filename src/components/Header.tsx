@@ -19,7 +19,7 @@ export default function Header({ total, change }: HeaderProps) {
     <View style={styles.container}>
       <View style={styles.textContainer}>
         <Heading size="heading5" style={{ color: dark.fg["on-contrast"] }}>
-          My heritage
+          Total balance
         </Heading>
 
         <Skeleton
