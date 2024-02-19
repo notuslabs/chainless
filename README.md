@@ -64,4 +64,4 @@ If you want to download our APK directly, access the link [here](https://expo.de
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.txt).
+© [2024] [NotusLabs]. All rights reserved.
